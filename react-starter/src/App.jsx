@@ -9,7 +9,12 @@ const App = () => (
   <Router>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img
+          src={logo}
+          className="App-logo"
+          alt="logo"
+          style={{ width: 200, height: 200, marginBottom: 20 }}
+        />{" "}
         <nav className="App-nav">
           <Link to="/">Home</Link>
           <Link to="/blankPage">New</Link>
@@ -18,7 +23,6 @@ const App = () => (
                <Link to="/workshop">Customers</Link>
           */}
         </nav>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/workshop" element={<Workshop />} />

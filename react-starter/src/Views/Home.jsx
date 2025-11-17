@@ -86,7 +86,7 @@ const Home = () => {
         />
         <p>See a helpful database connection example here</p>
         <Button
-          label="Link to blank page"
+          label="Link to example"
           onClick={() => navigate("/workshop")}
           style={{ marginLeft: "10px" }}
         />
