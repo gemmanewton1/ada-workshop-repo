@@ -3,7 +3,7 @@ import { addCustomer, fetchCustomers, deleteCustomer } from "../services/api";
 import CustomerTable from "../Components/CustomerTable";
 import CustomerForm from "../Components/CustomerForm";
 
-const Customers = () => {
+const Workshop = () => {
   const [customers, setCustomers] = useState([]);
   const [error, setError] = useState(null);
 
@@ -11,7 +11,7 @@ const Customers = () => {
     fetchCustomers()
       .then((res) => {
         // Map _id to id for all customers
-        setCustomers(res.data.map(c => ({ ...c, id: c.id || c._id })));
+        setCustomers(res.data.map((c) => ({ ...c, id: c.id || c._id })));
         setError(null); // Clear any previous errors on success
       })
       .catch((err) => {
@@ -36,7 +36,9 @@ const Customers = () => {
     setError(null);
     deleteCustomer(id)
       .then(() => {
-        setCustomers((prev) => prev.filter((customer) => (customer.id || customer._id)!== id));
+        setCustomers((prev) =>
+          prev.filter((customer) => (customer.id || customer._id) !== id)
+        );
       })
       .catch((err) => {
         console.error("Failed to delete customer", err);
@@ -45,20 +47,8 @@ const Customers = () => {
   };
   return (
     <div style={{ width: "100%" }}>
-      <h1>Customers</h1>
-      <p>
-        This page displays a list of customers fetched from the backend when the
-        page loads.
-      </p>
-      <p>
-        When you fill out the form and submit it, the new customer details are
-        sent to the backend API to be saved. Once successfully added, the new
-        customer will immediately appear in the table below.
-      </p>
-      <p>
-        You can also delete a customer using the delete button next to each
-        entry. This removes the customer from both the backend and the table.
-      </p>
+      <h1>Workshop Blank Page</h1>
+      <p>Here is an example of a database connection using a python backend</p>
       {error && (
         <p style={{ color: "red" }} role="alert">
           {error}
@@ -72,4 +62,4 @@ const Customers = () => {
   );
 };
 
-export default Customers;
+export default Workshop;
