@@ -1,7 +1,6 @@
 ## 🚀 Welcome to the Ada Hackathon App Development Workshop Repository!
 
-This repository contains multiple project starters you can explore and use freely.
-For the hackathon, your project will need three key components:
+This repository contains 2 project starters: Javascript React for frontend and Python for backend
 
 ### 🧩 Project Structure
 
