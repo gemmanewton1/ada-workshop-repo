@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Views/Home";
+// import logo
 import logo from "./logo.jpg";
 import "./App.css";
+// import pages so the page will appear
+import Home from "./Views/Home";
 import Workshop from "./Views/Workshop";
 import BlankPage from "./Views/BlankPage";
 
 const App = () => (
+  /* Router allows us to route between different pages */
   <Router>
     <div className="App">
       <header className="App-header">
@@ -15,6 +18,7 @@ const App = () => (
           alt="logo"
           style={{ width: 300, height: 150, marginBottom: 20 }}
         />{" "}
+        {/* Setting up navigation bar */}
         <nav className="App-nav">
           <Link to="/">Home</Link>
           <Link to="/workshop">Example</Link>
@@ -24,6 +28,7 @@ const App = () => (
                <Link to="/workshop">Customers</Link>
           */}
         </nav>
+        {/* Setting up routes */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/workshop" element={<Workshop />} />
