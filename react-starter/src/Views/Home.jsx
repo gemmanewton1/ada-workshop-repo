@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>🚀 Welcome to the Ada workshop test app</h1>
+      <h1>🚀 Welcome to the Ada workshop application!</h1>
 
       <Card title="Introduction">
         <p>
@@ -21,7 +21,7 @@ const Home = () => {
       <Card title="Workshop Task">
         <p>
           Build a simple web page with a form that users can fill out. This is a
-          fun way to practice HTML, CSS, and a little JavaScript.
+          fun way to practice React Javascript & CSS
         </p>
 
         <p>

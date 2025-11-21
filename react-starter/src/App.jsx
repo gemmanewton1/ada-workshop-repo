@@ -13,12 +13,13 @@ const App = () => (
           src={logo}
           className="App-logo"
           alt="logo"
-          style={{ width: 200, height: 200, marginBottom: 20 }}
+          style={{ width: 300, height: 150, marginBottom: 20 }}
         />{" "}
         <nav className="App-nav">
           <Link to="/">Home</Link>
-          <Link to="/blankPage">New</Link>
-          <Link to="/workshop">Workshop</Link>
+          <Link to="/workshop">Example</Link>
+          <Link to="/blankPage">Blank Page</Link>
+
           {/* Add another route here... 
                <Link to="/workshop">Customers</Link>
           */}
