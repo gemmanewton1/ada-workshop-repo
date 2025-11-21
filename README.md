@@ -1,4 +1,4 @@
-## 🚀 Welcome to the WiT Hackathon Repository!
+## 🚀 Welcome to the Ada Hackathon App Development Workshop Repository!
 
 This repository contains multiple project starters you can explore and use freely.
 For the hackathon, your project will need three key components:
